@@ -19,3 +19,7 @@
   background-color: #fff;
   border-radius: 4px;
 }
+
+.carousel img {
+  max-height: 70vh;
+}
