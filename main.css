@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .header {
   background-color: #000;
 }
@@ -23,3 +27,14 @@
 .carousel img {
   max-height: 70vh;
 }
+
+.title {
+  font-family: 'Staatliches', sans-serif !important; 
+}
+
+.text-colored {
+  color: #01A0E3;
+  font-family: inherit;
+}
+
+
