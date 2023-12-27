@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header sticky-top" id="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand m-0" href="#"><img class="d-block w-100" src="./imgs/logo.png" alt="BMW logo"></a>
@@ -33,55 +33,242 @@
     </div>
   </header>
 
-  <section>
-    <div class="carousel slide" id="carousel" data-bs-ride="carousel">
-      <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-1.jpg" alt="Capô de um carro BMW">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-2.jpg" alt="Capô de um carro BMW">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-3.jpg" alt="Capô de um carro BMW">
-        </div>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-      </div>
-    </div>
-    <div id="sobre" class="container py-5">
-      <div class="row mb-2">
-        <h2 class="title text-center">Sobre <span class="text-colored">nós</span></h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img class="d-block w-100 rounded" src="./imgs/fabrica.jpg" alt="fabrica de carros">
-        </div>
-        <div class="col-md-6">
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolor nemo minima delectus.
-            Neque, ducimus
-            in! Perspiciatis nihil amet, ipsam hic assumenda unde ipsa quas maxime ratione perferendis dignissimos
-            tempore.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, odit ipsa at minus, eius animi
-            exercitationem est laboriosam itaque commodi pariatur ut quisquam, officiis molestias adipisci perferendis
-            sit dolores nemo.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas saepe animi assumenda placeat
-            recusandae, dolorem eum magni fuga odio atque facere fugit impedit, sequi, quod cum. Ratione, fuga? Iste,
-            facere?</p>
-        </div>
-      </div>
+  <div data-bs-spy="scroll" data-bs-target="header" data-bs-smooth-scroll="true">
 
+    <section id="sobre">
+      <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-1.jpg" alt="Capô de um carro BMW">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-2.jpg" alt="Capô de um carro BMW">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img class="d-block w-100 object-fit-cover" src="./imgs/slides/slide-3.jpg" alt="Capô de um carro BMW">
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row mb-2">
+          <h2 class="title text-center">Sobre <span class="text-colored">nós</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="d-block w-100 rounded" src="./imgs/fabrica.jpg" alt="fabrica de carros">
+          </div>
+          <div class="col-md-6">
+            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolor nemo minima delectus.
+              Neque, ducimus
+              in! Perspiciatis nihil amet, ipsam hic assumenda unde ipsa quas maxime ratione perferendis dignissimos
+              tempore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, odit ipsa at minus, eius animi
+              exercitationem est laboriosam itaque commodi pariatur ut quisquam, officiis molestias adipisci perferendis
+              sit dolores nemo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas saepe animi assumenda placeat
+              recusandae, dolorem eum magni fuga odio atque facere fugit impedit, sequi, quod cum. Ratione, fuga? Iste,
+              facere?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carreiras">
+      <div class="container py-5">
+        <h2 class="title text-center">TRABALHE <span class="text-colored">CONOSCO</span></h2>
+        <video class="d-block w-100 rounded my-2" autoplay>
+          <source
+            src="https://www.bmwgroup.jobs/content/dam/grpw/websites/bmwgroup_jobs/br/BMW-Careers-header-brasil_PT.mp4"
+            type="video/mp4">
+        </video>
+        <button class="btn btn-primary">CONHEÇA</button>
+      </div>
+    </section>
+
+    <section id="veiculos">
+      <div class="container py-5">
+        <h2 class="title text-center">NOSSOS <span class="text-colored">VEÍCULOS</span></h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#sedas">SEDÃ</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#suvs">SUV</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#hatchs">HATCH</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#coupes">COUPÉ</button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="sedas">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="suvs">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9vl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9hQrfMb3islBglUb%25acRSrQdr9oimW8zcRacHJUVMbnW85Wu3fJqogMbUMdom0yJGqo9qaJoDl3iyJHy53ARrQ%25l3ulUQtgcRSrQdr9R1HW8zcRacH8ZuMbnW85WubxKqogMbUMdoPEyJGqo9qaJhyl3iyJHy5BuarQ%25l3ulUjdocRSrQdr9YbJW8zcRacH7oBMbnW85WuEFdqogMbUMd0oiyJGqo9qaFnvl3iyJHy5BgQrQ%25l3ulUjn8cRSrQdr9YpnW8zcRacHz55MbnW85WunRjqogMbUMdg89yJGqo9qaGbFl3iyJHy5iRErQ%25l3ulU%258jcRSrQdr9SKFW8zcRacHzeQMbnW85WunGJqogMbUMdgoRyJGqo9qaGu6l3iyJHy5ic0rQ%25l3ulU%25D8cRSrQdr9SmHW8zcRacHzwmMbnW85WunfIqogMbUMdgbJyJGqo9qaG2Hl3iyJHy5i6BrQ%25l3ulU%25K9cRSrQdr9SejW8zcRacH4g7MbnW85WuKDQqogMbUMdeoiyJGqo9qaDJ6l3iyJHy5m3erQ%25l3ulUCGpcRSrQdr98nDW8zcRacHb8gMbnW85Wuob9qogMbUMdJozyJGqo9qa3d%25l3iyJHy5QiErQ%25l3ulUR%256cRSrQdr985RW8zcRacHbR2MbnW85WuotJqogMbUMdJWYyJGqo9qa3s7l3iyJHy5Q4BrQ%25l3ulUUd5cRSrQdr993UW8zcRacHHQmMbnW85Wuu3HqogMbUMdd58yJGqo9qaakel3iyJHy55ElrQ%25l3ulUEQIcRSrQdr90RtW8zcRacHFGVMbnW85WuBNdqogMbUMdjYoyJGqo9qaYM7l3iyJHy57qNrQ%25l3ulUEt%25cRSrQdr901jW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9vl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9hQrfMb3islBglUb%25acRSrQdr9oimW8zcRacHJUVMbnW85Wu3fJqogMbUMdom0yJGqo9qaJoDl3iyJHy53ARrQ%25l3ulUQtgcRSrQdr9R1HW8zcRacH8ZuMbnW85WubxKqogMbUMdoPEyJGqo9qaJhyl3iyJHy5BuarQ%25l3ulUjdocRSrQdr9YbJW8zcRacH7oBMbnW85WuEFdqogMbUMd0oiyJGqo9qaFnvl3iyJHy5BgQrQ%25l3ulUjn8cRSrQdr9YpnW8zcRacHz55MbnW85WunRjqogMbUMdg89yJGqo9qaGbFl3iyJHy5iRErQ%25l3ulU%258jcRSrQdr9SKFW8zcRacHzeQMbnW85WunGJqogMbUMdgoRyJGqo9qaGu6l3iyJHy5ic0rQ%25l3ulU%25D8cRSrQdr9SmHW8zcRacHzwmMbnW85WunfIqogMbUMdgbJyJGqo9qaG2Hl3iyJHy5i6BrQ%25l3ulU%25K9cRSrQdr9SejW8zcRacH4g7MbnW85WuKDQqogMbUMdeoiyJGqo9qaDJ6l3iyJHy5m3erQ%25l3ulUCGpcRSrQdr98nDW8zcRacHb8gMbnW85Wuob9qogMbUMdJozyJGqo9qa3d%25l3iyJHy5QiErQ%25l3ulUR%256cRSrQdr985RW8zcRacHbR2MbnW85WuotJqogMbUMdJWYyJGqo9qa3s7l3iyJHy5Q4BrQ%25l3ulUUd5cRSrQdr993UW8zcRacHHQmMbnW85Wuu3HqogMbUMdd58yJGqo9qaakel3iyJHy55ElrQ%25l3ulUEQIcRSrQdr90RtW8zcRacHFGVMbnW85WuBNdqogMbUMdjYoyJGqo9qaYM7l3iyJHy57qNrQ%25l3ulUEt%25cRSrQdr901jW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9vl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9hQrfMb3islBglUb%25acRSrQdr9oimW8zcRacHJUVMbnW85Wu3fJqogMbUMdom0yJGqo9qaJoDl3iyJHy53ARrQ%25l3ulUQtgcRSrQdr9R1HW8zcRacH8ZuMbnW85WubxKqogMbUMdoPEyJGqo9qaJhyl3iyJHy5BuarQ%25l3ulUjdocRSrQdr9YbJW8zcRacH7oBMbnW85WuEFdqogMbUMd0oiyJGqo9qaFnvl3iyJHy5BgQrQ%25l3ulUjn8cRSrQdr9YpnW8zcRacHz55MbnW85WunRjqogMbUMdg89yJGqo9qaGbFl3iyJHy5iRErQ%25l3ulU%258jcRSrQdr9SKFW8zcRacHzeQMbnW85WunGJqogMbUMdgoRyJGqo9qaGu6l3iyJHy5ic0rQ%25l3ulU%25D8cRSrQdr9SmHW8zcRacHzwmMbnW85WunfIqogMbUMdgbJyJGqo9qaG2Hl3iyJHy5i6BrQ%25l3ulU%25K9cRSrQdr9SejW8zcRacH4g7MbnW85WuKDQqogMbUMdeoiyJGqo9qaDJ6l3iyJHy5m3erQ%25l3ulUCGpcRSrQdr98nDW8zcRacHb8gMbnW85Wuob9qogMbUMdJozyJGqo9qa3d%25l3iyJHy5QiErQ%25l3ulUR%256cRSrQdr985RW8zcRacHbR2MbnW85WuotJqogMbUMdJWYyJGqo9qa3s7l3iyJHy5Q4BrQ%25l3ulUUd5cRSrQdr993UW8zcRacHHQmMbnW85Wuu3HqogMbUMdd58yJGqo9qaakel3iyJHy55ElrQ%25l3ulUEQIcRSrQdr90RtW8zcRacHFGVMbnW85WuBNdqogMbUMdjYoyJGqo9qaYM7l3iyJHy57qNrQ%25l3ulUEt%25cRSrQdr901jW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9vl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9hQrfMb3islBglUb%25acRSrQdr9oimW8zcRacHJUVMbnW85Wu3fJqogMbUMdom0yJGqo9qaJoDl3iyJHy53ARrQ%25l3ulUQtgcRSrQdr9R1HW8zcRacH8ZuMbnW85WubxKqogMbUMdoPEyJGqo9qaJhyl3iyJHy5BuarQ%25l3ulUjdocRSrQdr9YbJW8zcRacH7oBMbnW85WuEFdqogMbUMd0oiyJGqo9qaFnvl3iyJHy5BgQrQ%25l3ulUjn8cRSrQdr9YpnW8zcRacHz55MbnW85WunRjqogMbUMdg89yJGqo9qaGbFl3iyJHy5iRErQ%25l3ulU%258jcRSrQdr9SKFW8zcRacHzeQMbnW85WunGJqogMbUMdgoRyJGqo9qaGu6l3iyJHy5ic0rQ%25l3ulU%25D8cRSrQdr9SmHW8zcRacHzwmMbnW85WunfIqogMbUMdgbJyJGqo9qaG2Hl3iyJHy5i6BrQ%25l3ulU%25K9cRSrQdr9SejW8zcRacH4g7MbnW85WuKDQqogMbUMdeoiyJGqo9qaDJ6l3iyJHy5m3erQ%25l3ulUCGpcRSrQdr98nDW8zcRacHb8gMbnW85Wuob9qogMbUMdJozyJGqo9qa3d%25l3iyJHy5QiErQ%25l3ulUR%256cRSrQdr985RW8zcRacHbR2MbnW85WuotJqogMbUMdJWYyJGqo9qa3s7l3iyJHy5Q4BrQ%25l3ulUUd5cRSrQdr993UW8zcRacHHQmMbnW85Wuu3HqogMbUMdd58yJGqo9qaakel3iyJHy55ElrQ%25l3ulUEQIcRSrQdr90RtW8zcRacHFGVMbnW85WuBNdqogMbUMdjYoyJGqo9qaYM7l3iyJHy57qNrQ%25l3ulUEt%25cRSrQdr901jW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="hatchs">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBguNbJl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRnqoQh47wMvcYi9K6rfMb3islBglUb90cRScHz63MbnMdQocyJGy58iUrQ%25r9oi5W8zWu3djqogqaJjdl3ilUQzjcRScH8gsMbnMdobeyJGy53ARrQ%25r9R1HW8zWubxdqogqaJhul3ilUQTqcRScH753MbnMd08YyJGy5BoorQ%25r9YbJW8zWunUQqogqaGb7l3ilU%25JjcRScHzo9MbnMdg3YyJGy5iRBrQ%25r9SEUW8zWunFbqogqaG%25Jl3ilU%254mcRScHzJmMbnMdg5uyJGy5i9ErQ%25r9SBYW8zWunCjqogqaG4zl3ilU%25WFcRScHzRUMbnMdg1RyJGy5mR3rQ%25r9sEGW8zWuKGEqogqaDCdl3ilUC4ocRScH4JBMbnMdeoiyJGy5m30rQ%25r9sRcW8zWuKSuqogqaDnvl3ilURJ5cRScHbeiMbnMdJ70yJGy5Q3drQ%25r98R9W8zWuobSqogqa3GIl3ilUR3pcRScHbDBMbnMdJC0yJGy5QkirQ%25r99aGW8zWuuRHqogqaabJl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBguNbJl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRnqoQh47wMvcYi9K6rfMb3islBglUb90cRScHz63MbnMdQocyJGy58iUrQ%25r9oi5W8zWu3djqogqaJjdl3ilUQzjcRScH8gsMbnMdobeyJGy53ARrQ%25r9R1HW8zWubxdqogqaJhul3ilUQTqcRScH753MbnMd08YyJGy5BoorQ%25r9YbJW8zWunUQqogqaGb7l3ilU%25JjcRScHzo9MbnMdg3YyJGy5iRBrQ%25r9SEUW8zWunFbqogqaG%25Jl3ilU%254mcRScHzJmMbnMdg5uyJGy5i9ErQ%25r9SBYW8zWunCjqogqaG4zl3ilU%25WFcRScHzRUMbnMdg1RyJGy5mR3rQ%25r9sEGW8zWuKGEqogqaDCdl3ilUC4ocRScH4JBMbnMdeoiyJGy5m30rQ%25r9sRcW8zWuKSuqogqaDnvl3ilURJ5cRScHbeiMbnMdJ70yJGy5Q3drQ%25r98R9W8zWuobSqogqa3GIl3ilUR3pcRScHbDBMbnMdJC0yJGy5QkirQ%25r99aGW8zWuuRHqogqaabJl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBguNbJl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRnqoQh47wMvcYi9K6rfMb3islBglUb90cRScHz63MbnMdQocyJGy58iUrQ%25r9oi5W8zWu3djqogqaJjdl3ilUQzjcRScH8gsMbnMdobeyJGy53ARrQ%25r9R1HW8zWubxdqogqaJhul3ilUQTqcRScH753MbnMd08YyJGy5BoorQ%25r9YbJW8zWunUQqogqaGb7l3ilU%25JjcRScHzo9MbnMdg3YyJGy5iRBrQ%25r9SEUW8zWunFbqogqaG%25Jl3ilU%254mcRScHzJmMbnMdg5uyJGy5i9ErQ%25r9SBYW8zWunCjqogqaG4zl3ilU%25WFcRScHzRUMbnMdg1RyJGy5mR3rQ%25r9sEGW8zWuKGEqogqaDCdl3ilUC4ocRScH4JBMbnMdeoiyJGy5m30rQ%25r9sRcW8zWuKSuqogqaDnvl3ilURJ5cRScHbeiMbnMdJ70yJGy5Q3drQ%25r98R9W8zWuobSqogqa3GIl3ilUR3pcRScHbDBMbnMdJC0yJGy5QkirQ%25r99aGW8zWuuRHqogqaabJl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBguNbJl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSRnqoQh47wMvcYi9K6rfMb3islBglUb90cRScHz63MbnMdQocyJGy58iUrQ%25r9oi5W8zWu3djqogqaJjdl3ilUQzjcRScH8gsMbnMdobeyJGy53ARrQ%25r9R1HW8zWubxdqogqaJhul3ilUQTqcRScH753MbnMd08YyJGy5BoorQ%25r9YbJW8zWunUQqogqaGb7l3ilU%25JjcRScHzo9MbnMdg3YyJGy5iRBrQ%25r9SEUW8zWunFbqogqaG%25Jl3ilU%254mcRScHzJmMbnMdg5uyJGy5i9ErQ%25r9SBYW8zWunCjqogqaG4zl3ilU%25WFcRScHzRUMbnMdg1RyJGy5mR3rQ%25r9sEGW8zWuKGEqogqaDCdl3ilUC4ocRScH4JBMbnMdeoiyJGy5m30rQ%25r9sRcW8zWuKSuqogqaDnvl3ilURJ5cRScHbeiMbnMdJ70yJGy5Q3drQ%25r98R9W8zWuobSqogqa3GIl3ilUR3pcRScHbDBMbnMdJC0yJGy5QkirQ%25r99aGW8zWuuRHqogqaabJl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="coupes">
+            <div class="row">
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3Rnvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFrqoQh47wMvcYi9kQwVMb3islBglUbudcRSrQdr9opHW8zcRacH8wzMbnW85WubtJqogMbUMdoISyJGqo9qaJ25l3iyJHy53LUrQ%25l3ulUQTUcRSrQdr9YaUW8zcRacH753MbnW85WuEJQqogMbUMdg9YyJGqo9qaGQ7l3iyJHy5iRBrQ%25l3ulU%2575cRSrQdr9SERW8zcRacHz0oMbnW85WunD4qogMbUMdgQsyJGqo9qaGEFl3iyJHy5iKErQ%25l3ulU%25egcRSrQdr9SMBW8zcRacHzwgMbnW85Wunm7qogMbUMdeBSyJGqo9qaD%25Fl3iyJHy5msbrQ%25l3ulUCQzcRSrQdr9sRcW8zcRacH4%25oMbnW85WuKSGqogMbUMdezdyJGqo9qaDnvl3iyJHy5QSKrQ%25l3ulURFjcRSrQdr98RnW8zcRacHb8UMbnW85WuobSqogMbUMdJgYyJGqo9qa3GIl3iyJHy5QJNrQ%25l3ulURI8cRSrQdr98lFW8zcRacHbDBMbnW85WuoxdqogMbUMdd8RyJGqo9qaaRdl3iyJHy559KrQ%25l3ulUEQ6cRSrQdr90R2W8zcRacHFGVMbnW85WuBNdqogMbUMdjWtyJGqo9qaY2Gl3iyJHy5765rQ%25l3ulUEO%25cRSrQdr90vtW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3Rnvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFrqoQh47wMvcYi9kQwVMb3islBglUbudcRSrQdr9opHW8zcRacH8wzMbnW85WubtJqogMbUMdoISyJGqo9qaJ25l3iyJHy53LUrQ%25l3ulUQTUcRSrQdr9YaUW8zcRacH753MbnW85WuEJQqogMbUMdg9YyJGqo9qaGQ7l3iyJHy5iRBrQ%25l3ulU%2575cRSrQdr9SERW8zcRacHz0oMbnW85WunD4qogMbUMdgQsyJGqo9qaGEFl3iyJHy5iKErQ%25l3ulU%25egcRSrQdr9SMBW8zcRacHzwgMbnW85Wunm7qogMbUMdeBSyJGqo9qaD%25Fl3iyJHy5msbrQ%25l3ulUCQzcRSrQdr9sRcW8zcRacH4%25oMbnW85WuKSGqogMbUMdezdyJGqo9qaDnvl3iyJHy5QSKrQ%25l3ulURFjcRSrQdr98RnW8zcRacHb8UMbnW85WuobSqogMbUMdJgYyJGqo9qa3GIl3iyJHy5QJNrQ%25l3ulURI8cRSrQdr98lFW8zcRacHbDBMbnW85WuoxdqogMbUMdd8RyJGqo9qaaRdl3iyJHy559KrQ%25l3ulUEQ6cRSrQdr90R2W8zcRacHFGVMbnW85WuBNdqogMbUMdjWtyJGqo9qaY2Gl3iyJHy5765rQ%25l3ulUEO%25cRSrQdr90vtW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3Rnvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFrqoQh47wMvcYi9kQwVMb3islBglUbudcRSrQdr9opHW8zcRacH8wzMbnW85WubtJqogMbUMdoISyJGqo9qaJ25l3iyJHy53LUrQ%25l3ulUQTUcRSrQdr9YaUW8zcRacH753MbnW85WuEJQqogMbUMdg9YyJGqo9qaGQ7l3iyJHy5iRBrQ%25l3ulU%2575cRSrQdr9SERW8zcRacHz0oMbnW85WunD4qogMbUMdgQsyJGqo9qaGEFl3iyJHy5iKErQ%25l3ulU%25egcRSrQdr9SMBW8zcRacHzwgMbnW85Wunm7qogMbUMdeBSyJGqo9qaD%25Fl3iyJHy5msbrQ%25l3ulUCQzcRSrQdr9sRcW8zcRacH4%25oMbnW85WuKSGqogMbUMdezdyJGqo9qaDnvl3iyJHy5QSKrQ%25l3ulURFjcRSrQdr98RnW8zcRacHb8UMbnW85WuobSqogMbUMdJgYyJGqo9qa3GIl3iyJHy5QJNrQ%25l3ulURI8cRSrQdr98lFW8zcRacHbDBMbnW85WuoxdqogMbUMdd8RyJGqo9qaaRdl3iyJHy559KrQ%25l3ulUEQ6cRSrQdr90R2W8zcRacHFGVMbnW85WuBNdqogMbUMdjWtyJGqo9qaY2Gl3iyJHy5765rQ%25l3ulUEO%25cRSrQdr90vtW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+              <div class="col-md-4">
+                <img class="d-block w-100"
+                  src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3Rnvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFrqoQh47wMvcYi9kQwVMb3islBglUbudcRSrQdr9opHW8zcRacH8wzMbnW85WubtJqogMbUMdoISyJGqo9qaJ25l3iyJHy53LUrQ%25l3ulUQTUcRSrQdr9YaUW8zcRacH753MbnW85WuEJQqogMbUMdg9YyJGqo9qaGQ7l3iyJHy5iRBrQ%25l3ulU%2575cRSrQdr9SERW8zcRacHz0oMbnW85WunD4qogMbUMdgQsyJGqo9qaGEFl3iyJHy5iKErQ%25l3ulU%25egcRSrQdr9SMBW8zcRacHzwgMbnW85Wunm7qogMbUMdeBSyJGqo9qaD%25Fl3iyJHy5msbrQ%25l3ulUCQzcRSrQdr9sRcW8zcRacH4%25oMbnW85WuKSGqogMbUMdezdyJGqo9qaDnvl3iyJHy5QSKrQ%25l3ulURFjcRSrQdr98RnW8zcRacHb8UMbnW85WuobSqogMbUMdJgYyJGqo9qa3GIl3iyJHy5QJNrQ%25l3ulURI8cRSrQdr98lFW8zcRacHbDBMbnW85WuoxdqogMbUMdd8RyJGqo9qaaRdl3iyJHy559KrQ%25l3ulUEQ6cRSrQdr90R2W8zcRacHFGVMbnW85WuBNdqogMbUMdjWtyJGqo9qaY2Gl3iyJHy5765rQ%25l3ulUEO%25cRSrQdr90vtW8zcRacHeomMbnW85WuDYjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot"
+                  alt="bmw car">
+                <h3 class="text-colored fs-6 text-center">BMW-XPTO</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="contato">
+      <div class="container py-5">
+        <h2 class="title text-center">FALE <span class="text-colored">CONOSCO</span></h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label" for="name">Nome</label>
+                <input class="form-control" type="text" id="name">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-control" type="email" id="email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="msg">Mensagem</label>
+                <textarea class="form-control" id="msg"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <address>
+              <ul class="list-unstyled">
+                <li>Rua bootstrap, n° 120</li>
+                <li>bmw@gmail.com</li>
+                <li>11 99999-9999</li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container py-4">
+      <p class="text-center">&copy; BMW, todos os direitos reservados</p>
     </div>
-  </section>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

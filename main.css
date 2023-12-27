@@ -1,8 +1,9 @@
 * {
   font-family: 'Roboto', sans-serif;
+  transition: .3s;
 }
 
-.header {
+.header, footer {
   background-color: #000;
 }
 
@@ -37,4 +38,38 @@
   font-family: inherit;
 }
 
+#sobre {
+  background-color: #e2f2f2;
+}
 
+#carreiras .btn.btn-primary {
+  background-color: #01A0E3;
+  border: none;
+  transition: opacity .3s;
+}
+
+#carreiras .btn.btn-primary:hover {
+  opacity: .5;
+}
+
+#veiculos {
+  background-color: #e2f2f2;
+}
+
+#veiculos .nav-item {
+  color: #01A0E3;
+  font-weight: bold;
+}
+
+#veiculos .tab-content {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+#contato textarea {
+  resize: none;
+}
+
+footer {
+  color: #fff;
+}
